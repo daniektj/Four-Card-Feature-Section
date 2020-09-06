@@ -1,0 +1,154 @@
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GreyishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: var(--VeryLightGray);
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px 30px;
+    grid-template-areas:
+      "grid-01 grid-02 grid-03"
+      "grid-04 grid-05 grid-06";
+  }
+  
+  .grid-01 {
+      grid-area: grid-01;
+      background-color: white;
+
+      position: relative;
+      bottom: -140px;
+
+      width: 350px;
+      height: 250px;
+
+      border-radius: 5px;
+      border-top: 5px solid var(--cyan); 
+     }
+  
+  .grid-02 {
+      grid-area: grid-02;
+      background-color: white;
+      width: 350px;
+      height: 250px;
+
+      border-radius: 5px;
+      border-top: 5px solid var(--red); 
+    }
+
+  
+  
+  .grid-03 {
+      grid-area: grid-03;
+      background-color: white;
+      position: relative;
+      bottom: -140px;
+
+      border-radius: 5px;
+      border-top: 5px solid var(--blue); 
+    }
+  
+  .grid-04 { grid-area: grid-04; }
+  
+  .grid-05 {
+      grid-area: grid-05;
+      background-color: white;
+      position: relative;
+      border-radius: 5px;
+      border-top: 5px solid var(--orange); 
+      
+ }
+  
+  .grid-06 { grid-area: grid-06; }
+  
+    .card{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      height: 250px;
+  }
+
+  .card_container{
+      width: 290px;
+      height: 170px;
+  }
+
+  h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #4c4d5f;
+    margin-bottom: 20px;   
+    line-height: 1.3;
+  }
+
+  h1::first-line{
+    font-weight: 100;
+  }
+
+  h3{
+    font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #4c4d5f;
+      margin-bottom: 20px;      
+  }
+
+#text_description{
+    width: 500px;
+    color: var(--GreyishBlue);
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+.card_description{
+    color: var(--GreyishBlue);
+}
+
+.shadow_effect{
+    box-shadow: 0px 5px 10px 2px #eaf1fc;
+}
+
+.card_image{
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+}
+
+.card_image2{
+    position: relative;
+    bottom: -30px;
+    left: 225px;
+}
+
+footer{
+    margin-top: 40px;
+}
